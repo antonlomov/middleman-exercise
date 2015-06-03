@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Le Wagon Middleman boilerplate
 ---
 
@@ -6,5 +6,67 @@ title: Le Wagon Middleman boilerplate
   <h1>Middleman is Watching</h1>
   <p class="doc">
     <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+  </p>
+</div> -->
+
+  <!-- Banner -->
+  <div id="banner">
+    <h1>Stylus</h1>
+    <p>Turn your pen into your best friend</p>
+    <p>Make every line you write count.</p>
+    <!-- <a href="" class="btn btn-primary btn-lg">GET YOUR STYLUS</a> -->
+    <%= link_to 'GET YOUR STYLUS', "", class: "btn btn-primary btn-lg"%>
+      <% link_to "#description" do %>
+        <i class="fa fa-angle-down pulse"></i>
+      <% end %>
+  </div>
+
+    <!-- Features -->
+<div class="blue-bg padded window-height" id="description">
+<div class="container text-center">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="card">
+      <!-- <img src="images/paper.svg"> -->
+      <%= image_tag 'paper.svg'%>
+      <h2>Natural writing</h2>
+      <p>Don't change your habits, write with a pen <strong>on paper notebooks</strong></p>
+    </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="card">
+      <!-- <img src="images/computer.svg"> -->
+      <%= image_tag 'computer.svg'%>
+      <h2>Sync. copy</h2>
+      <p>Stylus instantaneously copy your text on your computer, <strong>in real-time</strong></p>
+    </div>
+
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="card">
+      <!-- <img src="images/analytics.svg"> -->
+      <%= image_tag 'analytics.svg' %>
+      <h2>Analytics</h2>
+      <p>Get feedbacks on the way you write, <strong>your favorite words, your frequent mistakes</strong></p>
+    </div>
+
+    </div>
+    <div class="card">
+      <!-- <img src="images/data.svg"> -->
+      <%= image_tag 'data.svg'%>
+      <h2>Storing your texts</h2>
+      <p>Everything line writen with your stylus is stored in the cloud, so that <strong>it's never lost</strong></p>
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+    <div class="text-center padded">
+    <h2>Get news from stylus</h2>
+    <p>Leave us your mail and get stylus news</p>
+    <form class="form-inline">
+      <input type="email" placeholder="example@gmail.com" class="form-control">
+      <input type="submit" value="Subscribe" class="btn btn-primary">
+    </form>
+  </div>
